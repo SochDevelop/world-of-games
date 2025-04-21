@@ -1,0 +1,2 @@
+docker build -t world-of-games .
+docker run -p 5000:5000 -v $PWD/Scores.txt:/Scores.txt world-of-games
