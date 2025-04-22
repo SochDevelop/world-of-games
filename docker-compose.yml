@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  score-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: odedpsiphas/world-of-games:latest
+    ports:
+      - "5000:5000"
+    container_name: world-of-games-container
